@@ -1,10 +1,12 @@
 {
   "name": "diary",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Express.js Server for Diary",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --watch src --delay 1 --exec ts-node src/www.ts",
+    "build": "webpack --config webpack.config.js"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +22,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "source-map-support": "^0.5.19"
+    "source-map-support": "^0.5.19",
+    "ts-node": "^9.1.1"
   }
 }
